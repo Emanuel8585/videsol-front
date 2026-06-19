@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #1B3A6B;
+  --color-navy-dark: #0F2340;
+  --color-navy-light: #2B5080;
+  --color-crimson: #9B1C1C;
+  --color-crimson-hover: #7F1515;
+  --color-surface: #F7F8FC;
+  --color-border: #E2E8F0;
+  --font-outfit: var(--font-outfit);
+  --font-bebas: var(--font-bebas);
+
+  --animate-marquee: marquee 18s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+}
+
+/* GSAP pre-hide: evita el flash en mobile antes de que GSAP tome control */
+.brands-header,
+.brands-ticker-wrap {
+  visibility: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0F172A;
+  font-family: var(--font-outfit), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-outfit), system-ui, sans-serif;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #F7F8FC; }
+::-webkit-scrollbar-thumb { background: #1B3A6B; border-radius: 2px; }
+
+/* Navy gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #1B3A6B 0%, #2B5080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.overflow-clip { overflow: hidden; }
