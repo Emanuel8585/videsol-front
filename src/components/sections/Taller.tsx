@@ -63,28 +63,12 @@ export default function Taller() {
         ease: "power3.out",
         scrollTrigger: { trigger: ".srv-video", start: "top 85%", once: true },
       });
-      gsap.from(".srv-stat", {
-        opacity: 0,
-        y: 20,
-        stagger: 0.08,
-        duration: 0.6,
-        ease: "power3.out",
-        scrollTrigger: { trigger: ".srv-stats", start: "top 90%", once: true },
-      });
       gsap.from(".srv-content", {
         opacity: 0,
         y: 40,
         duration: 0.9,
         ease: "power3.out",
         scrollTrigger: { trigger: ".srv-content", start: "top 88%", once: true },
-      });
-      gsap.from(".srv-brand", {
-        opacity: 0,
-        y: 20,
-        stagger: 0.06,
-        duration: 0.6,
-        ease: "power3.out",
-        scrollTrigger: { trigger: ".srv-brands", start: "top 88%", once: true },
       });
     },
     { scope: sectionRef }
