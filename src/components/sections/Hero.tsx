@@ -87,7 +87,7 @@ export default function Hero() {
       {/* ── Video ─────────────────────────────────────────────────────── */}
       {videoFailed ? (
         <Image
-          src="/images/hero-fallback.jpg"
+          src="/videos/hero-fallback.jpg"
           alt=""
           fill
           className="object-cover"
@@ -101,6 +101,7 @@ export default function Hero() {
           loop
           playsInline
           preload="auto"
+          poster="/videos/hero-fallback.jpg"
           onError={() => setVideoFailed(true)}
         >
           <source src="/videos/video11.mp4" type="video/mp4" />

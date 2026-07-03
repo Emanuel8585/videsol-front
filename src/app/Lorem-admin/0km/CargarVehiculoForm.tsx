@@ -47,7 +47,7 @@ interface Props {
 // ─── Constantes ───────────────────────────────────────────────────────────────
 
 
-const MAX_IMAGES   = 7
+const MAX_IMAGES   = 14
 
 const TIPOS         = ['Auto', 'SUV', 'Pick-Up', 'Hatchback', 'Sedán', 'Furgón', 'Crossover', 'Utilitario', 'Clásico']
 const COMBUSTIBLES  = ['Nafta', 'Diesel', 'Híbrido', 'Eléctrico']

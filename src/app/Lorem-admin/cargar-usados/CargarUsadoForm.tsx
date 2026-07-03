@@ -7,7 +7,7 @@ import type { StockItem } from './page'
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-const COMBUSTIBLES  = ['Nafta', 'Diésel', 'Nafta/GNC', 'Híbrido', 'Eléctrico']
+const COMBUSTIBLES  = ['Nafta', 'Diésel', 'Híbrido', 'Eléctrico']
 const TRANSMISIONES = ['Manual', 'Automática', 'CVT', 'Automatizada']
 const DIRECCIONES   = ['Eléctrica', 'Mecánica', 'Hidráulica', 'Electrohidráulica', 'Eléctrica progresiva']
 const TIPOS         = ['Sedán', 'Hatchback', 'SUV', 'Pickup', 'Coupé', 'Convertible', 'Minivan', 'Furgón', 'Otro']
@@ -260,8 +260,8 @@ export default function CargarUsadoForm({ vehiculo, onCancel, onSuccess }: Props
   const handleImagenesChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files ?? [])
     if (!files.length) return
-    if (imagenes.length + files.length > 10) {
-      alert('Máximo 10 fotos por vehículo.')
+    if (imagenes.length + files.length > 20) {
+      alert('Máximo 20 fotos por vehículo.')
       return
     }
 
@@ -669,13 +669,13 @@ export default function CargarUsadoForm({ vehiculo, onCancel, onSuccess }: Props
           {/* ── Fotos ── */}
           <Section title="Fotos">
             <p className="text-[12px] text-slate-500 -mt-2">
-              Subí hasta 10 fotos. Hacé clic en una imagen para marcarla como principal.
+              Subí hasta 20 fotos. Hacé clic en una imagen para marcarla como principal.
             </p>
 
             <button
               type="button"
               onClick={() => fileInputRef.current?.click()}
-              disabled={imagenes.length >= 10 || uploading}
+              disabled={imagenes.length >= 20 || uploading}
               className="w-full border-2 border-dashed border-slate-200 hover:border-violet-300 rounded-xl py-8 flex flex-col items-center gap-2 text-slate-400 hover:text-violet-500 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
             >
               {uploading ? (
@@ -692,7 +692,7 @@ export default function CargarUsadoForm({ vehiculo, onCancel, onSuccess }: Props
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
                   </svg>
                   <span className="text-[13px] font-medium">
-                    {imagenes.length === 0 ? 'Seleccioná las fotos' : `Agregar más (${imagenes.length}/10)`}
+                    {imagenes.length === 0 ? 'Seleccioná las fotos' : `Agregar más (${imagenes.length}/20)`}
                   </span>
                   <span className="text-[11px]">JPG, PNG, WebP</span>
                 </>
