@@ -43,7 +43,7 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = `Hola! Me llamo ${form.name}. ${form.message}`;
-    window.open(`https://wa.me/59891307261?text=${encodeURIComponent(text)}`, "_blank");
+    window.open(`https://wa.me/59897734751?text=${encodeURIComponent(text)}`, "_blank");
     setSent(true);
     setTimeout(() => setSent(false), 4000);
     setForm({ name: "", phone: "", message: "" });
@@ -95,7 +95,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-slate-800 font-bold text-sm mb-1.5">Teléfono</p>
-                <a href="https://wa.me/59845225411" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/59897734751" target="_blank" rel="noopener noreferrer"
                   className="text-slate-500 text-sm hover:text-navy transition-colors">
                   4522 5411 / 5412
                 </a>

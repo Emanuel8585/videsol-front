@@ -100,7 +100,7 @@ export default function Footer() {
                 José Pedro Varela 593,<br />Colonia del Sacramento
               </a>
               <a
-                href="https://wa.me/59845225411"
+                href="https://wa.me/59897734751"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2.5 text-[12px] text-white/30 hover:text-white/70 transition-colors group"
