@@ -34,7 +34,8 @@ interface FiltrosProps {
 // ─────────────────────────────────────────────
 // OPCIONES
 // ─────────────────────────────────────────────
-const MARCAS        = ['Todas', 'BYD', 'Chevrolet', 'Citroen', 'Nissan', 'Peugeot', 'Renault', 'Riddara', 'Subaru']
+const MARCAS_OKM    = ['Todas', 'BYD', 'Citroen', 'Nissan', 'Peugeot', 'Renault', 'Riddara', 'Subaru']
+const MARCAS_USADOS = ['Todas', 'BYD', 'Chevrolet', 'Citroen', 'Nissan', 'Peugeot', 'Renault', 'KIA', 'Subaru']
 const CARROCERIAS   = ['Todas', 'SUV', 'Pick-Up', 'Hatchback', 'Sedán', 'Furgón', 'Clásico', 'Utilitario', 'Crossover']
 const COMBUSTIBLES  = ['Todos', 'Nafta', 'Diesel', 'Híbrido', 'Eléctrico']
 const TRANSMISIONES = ['Todas', 'Manual', 'Automática', 'Automática (CVT)']
@@ -151,7 +152,7 @@ export default function Filtros({ onFiltrosChange, totalResultados, variant = 'o
           <div>
             <GroupLabel>Marca</GroupLabel>
             <div className="flex flex-col gap-1">
-              {MARCAS.map((m) => (
+              {(variant === 'usados' ? MARCAS_USADOS : MARCAS_OKM).map((m) => (
                 <Pill key={m} label={m} active={filtros.marca === m} onClick={() => actualizar({ marca: m })} />
               ))}
             </div>

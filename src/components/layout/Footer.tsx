@@ -207,6 +207,25 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* ── Brander credit ── */}
+        <div className="flex justify-center">
+          <a
+            href="https://www.brandercloud.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center "
+          >
+            <span className="text-[10px] text-white tracking-widest uppercase">Desarrollado por</span>
+            <Image
+              src="/images/brander.png"
+              alt="Brander Cloud"
+              width={192}
+              height={48}
+              className="h-12 w-auto object-contain"
+            />
+          </a>
+        </div>
+
       </div>
     </footer>
   );
