@@ -68,41 +68,26 @@ export default function VehicleCardUsado({ vehicle, animationDelay = 0 }: Props)
             )}
 
 
-            {/* Único dueño badge — top right */}
-            <span className={`absolute top-3 right-3 flex items-center gap-1 text-[10px] font-semibold px-2.5 py-1 rounded-full ${vehicle.unicoDueno
-                ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
-                : 'bg-slate-50 text-slate-400 border border-slate-200'
-              }`}>
-              {vehicle.unicoDueno ? (
-                <>
-                  <svg
-                    className="w-4 h-4 text-green-600 flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2.5}
-                    aria-hidden="true"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Único dueño</span>
-                </>
-              ) : (
-                <>
-                  <svg
-                    className="w-4 h-4 text-gray-400 flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2.5}
-                    aria-hidden="true"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                  <span>Varios dueños</span>
-                </>
-              )}
-            </span>
+            {vehicle.unicoDueno && (
+              <span className="absolute top-3 right-3 flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-[10px] font-semibold text-emerald-700">
+                <svg
+                  className="h-4 w-4 flex-shrink-0 text-green-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+
+                <span>Único dueño</span>
+              </span>
+            )}
 
             {/* Financiación badge */}
             {vehicle.financiacion && (

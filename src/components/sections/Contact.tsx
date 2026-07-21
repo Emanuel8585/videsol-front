@@ -113,7 +113,6 @@ export default function Contact() {
                   {[
                     { day: "Lun — Vie", hours: "08:00 - 12:00 — 14:00 - 18:00", closed: false },
                     { day: "Sábado",    hours: "08:00 — 12:00",                  closed: false },
-                    { day: "Domingo",   hours: "Cerrado",                         closed: true  },
                   ].map((r) => (
                     <div key={r.day} className="flex justify-between gap-8">
                       <span className="text-slate-500">{r.day}</span>

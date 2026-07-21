@@ -34,7 +34,7 @@ interface FiltrosProps {
 // ─────────────────────────────────────────────
 // OPCIONES
 // ─────────────────────────────────────────────
-const MARCAS_OKM    = ['Todas', 'BYD', 'Citroen', 'Nissan', 'Peugeot', 'Renault', 'Riddara', 'Subaru']
+const MARCAS_OKM    = ['Todas', 'BYD', 'BAIC', 'Citroen', 'Nissan', 'Peugeot', 'Renault', 'Riddara', 'Subaru']
 const MARCAS_USADOS = ['Todas', 'BYD', 'Chevrolet', 'Citroen', 'Nissan', 'Peugeot', 'Renault', 'KIA', 'Subaru']
 const CARROCERIAS   = ['Todas', 'SUV', 'Pick-Up', 'Hatchback', 'Sedán', 'Furgón', 'Clásico', 'Utilitario', 'Crossover']
 const COMBUSTIBLES  = ['Todos', 'Nafta', 'Diesel', 'Híbrido', 'Eléctrico']

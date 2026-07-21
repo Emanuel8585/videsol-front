@@ -27,7 +27,7 @@ const values = [
   { icon: ShieldCheck, title: "Transparencia", desc: "Sin letra chica ni sorpresas." },
   { icon: Award, title: "Calidad", desc: "Revisión técnica certificada." },
   { icon: Users, title: "Atención", desc: "Asesoramiento real, sin presión." },
-  { icon: Handshake, title: "Confianza", desc: "45 años respaldando cada venta." },
+  { icon: Handshake, title: "Confianza", desc: "50 años respaldando cada venta." },
 ];
 
 // ─── Before / After reveal slider ───────────────────────────────────────────────
@@ -268,7 +268,7 @@ export default function AboutUs() {
                 , además de un sólido respaldo posventa.
               </p>
               <p>
-                Contamos con instalaciones modernas, una ubicación estratégica y un equipo humano altamente
+                Contamos con varios vehículos test drive, instalaciones modernas, una ubicación estratégica y un equipo humano altamente
                 capacitado, enfocado en ofrecer{" "}
                 <span className="text-slate-700 font-medium">
                   atención profesional, confianza y soluciones de calidad

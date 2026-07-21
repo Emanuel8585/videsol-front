@@ -5,6 +5,7 @@ import Stats from "@/components/sections/Stats";
 import FeaturedVehicles from "@/components/sections/FeaturedVehicles";
 import Brands from "@/components/sections/Brands";
 import Taller from "@/components/sections/Taller";
+import TestDriveLand from "@/components/sections/TestDriveLand";
 import AboutUs from "@/components/sections/AboutUs";
 import Contact from "@/components/sections/Contact";
 import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
@@ -20,6 +21,7 @@ export default function Home() {
         <FeaturedVehicles />
         <Brands />
         <Taller />
+        <TestDriveLand />
         <AboutUs />
         <Contact />
       </main>
