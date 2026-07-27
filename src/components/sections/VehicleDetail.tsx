@@ -370,6 +370,13 @@ export default function VehicleDetail({ vehicle }: VehicleDetailProps) {
                 </div>
               )}
 
+              {/* Disclaimer */}
+              <div className="px-7 py-3 border-b border-slate-100">
+                <p className="text-[10px] text-slate-400 leading-relaxed">
+                  * Especificaciones técnicas y colores sujetos a modificación y disponibilidad. Imágenes ilustrativas.
+                </p>
+              </div>
+
               {/* Specs */}
               <div className="px-7 py-5 border-b border-slate-100">
                 <p className="text-[10px] font-semibold tracking-[2px] text-slate-400 uppercase mb-4">
